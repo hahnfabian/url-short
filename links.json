@@ -2,5 +2,17 @@
   {
     "name": "0",
     "url": "http://example.com"
+  },
+  {
+    "name": "gh",
+    "url": "https://github.com/hahnfabian"
+  },
+  {
+    "name": "cv",
+    "url": "https://johannesfabianhahn/cv_fabian_hahn.pdf"
+  },
+  {
+    "name": "blog",
+    "url": "https://johannesfabianhahn/blog"
   }
 ]
