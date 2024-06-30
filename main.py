@@ -7,14 +7,14 @@ def main():
     with open('links.json') as f:
         links = json.load(f)
     
-    if not os.path.exists('dist') and not os.path.isdir('dist'):
-        os.mkdir('dist')
+    if not os.path.exists('docs') and not os.path.isdir('docs'):
+        os.mkdir('docs')
 
     for link in links:
         html_document = html.format(url=link['url'])
 
         linkname = link['name']
-        file_path = f'dist/{linkname}.html'
+        file_path = f'docs/{linkname}.html'
 
         with open(file_path, 'w') as f:
             f.write(html_document)
