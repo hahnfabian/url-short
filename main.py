@@ -6,8 +6,9 @@ def main():
 
     with open('links.json') as f:
         links = json.load(f)
-
-    os.mkdir('dist')
+    
+    if not os.path.exists('dist') and not os.path.isdir('dist'):
+        os.mkdir('dist')
 
     for link in links:
         html_document = html.format(url=link['url'])
